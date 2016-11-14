@@ -1,0 +1,89 @@
+
+
+
+
+
+
+/*
+***************************************************登录页面*****************************************************
+ */
+#login{
+    padding:0;
+    margin:0;
+}
+#login form{
+    position:absolute;
+    width:800px;
+    height:300px;
+    border:1px solid #ddd;
+    top:150px;
+    left:400px;
+}
+#login form .loginLeft{
+    float:left;
+    width:470px;
+    height:300px;
+}
+#login form .loginRight{
+    height:150px;
+    margin:75px;
+}
+#login form .loginRight .form-group label{
+    font-family: Verdana, Aril, sans-serif;
+    color: #111;
+}
+#login form .loginRight .form-group input[type=text]{
+    width:17em;
+}
+#login form .loginRight .form-group input[type=password]{
+    width:17em;
+}
+#login form .loginRight .form-group input[type=checkbox]{
+    width:1em;
+    height:1em;
+    float:left;
+    margin-right:.3em;
+}
+#login form .loginRight .form-group span{
+    float:right;
+    display:inline-block;
+    margin-right:1.5em;
+}
+#login form .loginRight .form-group button{
+    width:17em;
+}
+/*
+***************************************************注册页面*****************************************************
+*/
+#register{
+    margin:0;
+    padding:0;
+}
+#register .form{
+    position:absolute;
+    width:350px;
+    top:100px;
+    left:350px;
+}
+#register .form .input-group{
+    margin-top:1.4em;
+}
+#register .form .input-group input{
+    width:17em;
+}
+#register .form .input-group span{
+    width:6em;
+}
+#register .form .input-group span a{
+    font: 9pt/12pt georgia;
+}
+#register .form .input-group input[type=checkbox]{
+    float:left;
+    width:1em;
+    height:1em;
+    margin-right:.3em;
+}
+#register .form .input-group button{
+    width:23em;
+    height:2.5em;
+}
