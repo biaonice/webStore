@@ -156,40 +156,77 @@
 /*
 ***************************************************book详细信息页面*****************************************************
 */
-.container .img-rounded{
-    float:left;
-}
-.container .img-rounded .img-thumbnail img{
-    display:inline-block;
-    float:left;
-}
-.container .img-rounded .img-thumbnail nav {
-    display:block;
-}
-.container .img-rounded .img-thumbnail nav ul li{
-   list-style:none;
-}
-.container .img-rounded .img-thumbnail nav ul li a img{
-    border:1px solid fff;
-    float:left;
-    width:70px;
-    height:70px;
-}
-.container .img-rounded .img-thumbnail nav ul li a img:hover{
-    border:1px solid red;
-}
-.information{
-    width:700px;
-    display:inline-block;
+.main{
+    padding-left:20px;
     border:1px solid #333;
 }
+.main .img-left{
+    float:left;
+}
+.main .img-left nav{
+    display:block;
+    padding:5px 0;
+    border:1px solid #ddd;
+    height:75px;
+}
+.main .img-left nav ul li{
+    list-style:none;
+    float:left;
+}
+.main .img-left nav ul li img{
+    width:70px;
+    height:70px;
+    border:1px solid #fff;
+}
+.main .img-left nav ul li img:hover{
+    border:1px solid red;
+}
+
+ .information{
+     width:900px;
+     margin-top:20px;
+}
 .information p{
-    font-family: Georgia, Aril, sans-serif;
-    line-height:2em;
+    font: 12pt/14pt georgia;
+    color:#666;
 }
-.information div{
-    margin:10px 0;
+.information p.price{
+    display:block;
+    margin-top:40px;
+    margin-bottom:20px;
 }
-.information div input{
-    width:3em;
+.information p .right{
+    float:right;
+    margin-right:20px;
+}
+.information p.service{
+    display:block;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.information .counter input{
+    width:50px;
+    height:40px;
+}
+.information .counter span{
+    display:block;
+    float:left;
+    text-align:center;
+    border:1px solid #999;
+    width:25px;
+    height:20px;
+}
+.information .counter span:hover{
+    background-color:green;
+}
+.information p.right span{
+    display:inline-block;
+    margin-right:20px;
+}
+.information p.right span a{
+    color:#fff;
+}
+.information p.prompt{
+    display:block;
+    margin-top:50px;
 }
