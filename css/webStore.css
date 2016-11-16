@@ -156,29 +156,26 @@
 /*
 ***************************************************book详细信息页面*****************************************************
 */
-.main{
-    padding-left:20px;
-    border:1px solid #333;
+.detail{
+    border:1px solid #ddd;
 }
-.main .img-left{
+.detail .img-left{
     float:left;
 }
-.main .img-left nav{
-    display:block;
-    padding:5px 0;
-    border:1px solid #ddd;
-    height:75px;
+.detail .img-left nav{
+    background:#fff;
+    height:80px;
 }
-.main .img-left nav ul li{
+.detail .img-left nav ul li{
     list-style:none;
     float:left;
 }
-.main .img-left nav ul li img{
+.detail .img-left nav ul li a img{
     width:70px;
     height:70px;
     border:1px solid #fff;
 }
-.main .img-left nav ul li img:hover{
+.detail .img-left nav ul li img:hover{
     border:1px solid red;
 }
 
@@ -205,19 +202,24 @@
     margin-bottom:40px;
 }
 .information .counter input{
+    font: 14px/16px arial, helvetica, verdana, sans-serif;
     width:50px;
     height:40px;
+    border-right:none;
 }
 .information .counter span{
     display:block;
     float:left;
     text-align:center;
-    border:1px solid #999;
+    border:1px solid #aaa;
     width:25px;
     height:20px;
 }
+.information .counter span:nth-of-type(1){
+    border-bottom:none;
+}
 .information .counter span:hover{
-    background-color:green;
+    background-color:#999;
 }
 .information p.right span{
     display:inline-block;
@@ -228,5 +230,102 @@
 }
 .information p.prompt{
     display:block;
+    font: 12px/16px arial, helvetica, verdana, sans-serif;
+    color: #555;
     margin-top:50px;
+}
+/*
+***************************************************购物车页面*****************************************************
+*/
+#shopping{
+    padding:0;
+    margin:0;
+}
+.shoppingCar{
+
+}
+.shoppingCar .table{
+
+}
+.shoppingCar .table .thead{
+    background:#eee;
+}
+.shoppingCar .table .thead span{
+    text-align:center;
+    width:120px;
+    display:inline-block;
+    font: 14px/18px arial, helvetica, verdana, sans-serif;
+    margin:10px 20px;
+}
+.shoppingCar .table .thead span:nth-of-type(2){
+    width:200px;
+}
+.shoppingCar .table .tbody span{
+    vertical-align:middle;
+    text-align:center;
+    width:120px;
+    display:inline-block;
+    font: 14px/18px arial, helvetica, verdana, sans-serif;
+    margin:5px 20px;
+}
+.shoppingCar .table .tbody span:nth-of-type(2){
+    width:50px;
+    margin:5px 10px;
+}
+.shoppingCar .table .tbody span img{
+    float:left;
+    margin:2px;
+}
+.shoppingCar .table .tbody span a{
+    clear:both;
+    margin:2px;
+    vertical-align:middle;
+}
+.shoppingCar .table .tbody span i{
+    display:inline-block;
+    border:1px solid #999;
+    text-align:center;
+    width:1.7em;
+    height:1.7em;
+    margin-top:-.2em;
+}
+.shoppingCar .table .tbody span i:nth-of-type(1){
+    border-right:none;
+}
+.shoppingCar .table .tbody span i:nth-of-type(2){
+    border-left:none;
+}
+.shoppingCar .table .tbody span i:hover{
+    color:red;
+}
+.shoppingCar .table .tbody span input[type=text]{
+    height:1.7em;
+    width:2.5em;
+    text-align:center;
+}
+
+.shoppingCar .tbottom{
+    padding:15px 0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    margin-top:20px;
+}
+.shoppingCar .tbottom .left{
+    display:inline-block;
+    margin-left:50px;
+}
+.shoppingCar .tbottom .right{
+    display:inline-block;
+    float:right;
+    margin-right:120px;
+}
+.shoppingCar .tbottom span{
+    vertical-align:middle;
+    text-align:center;
+    display:inline-block;
+    font: 14px/18px arial, helvetica, verdana, sans-serif;
+    margin:5px 20px;
+}
+.shoppingCar .tbottom span.right a{
+    color:#fff;
 }
