@@ -27,7 +27,7 @@
 .storeHeader .shoppingCar{
     margin-top:30px;
     float:right;
-    margin-right:100px;
+    margin-right:5px;
 }
 .storeHeader .shoppingCar a{
     background:#333;
@@ -38,7 +38,7 @@
 }
 .navTitle h3{
     width:200px;
-    background:#222;
+    background:#337ab7;
     color:#fff;
     float:left;
     font-size:1.5em;
@@ -92,8 +92,13 @@ hr{
     padding:5px 0;
     line-height:30px;
 }
+.footer{
+    background:#000;
 
-
+}
+.footer a{
+    color:#fff;
+}
 
 /*
 ***************************************************首页webstore*****************************************************
@@ -147,7 +152,7 @@ hr{
     width:800px;
     height:300px;
     border:1px solid #ddd;
-    top:150px;
+    top:200px;
     left:400px;
 }
 #login form .loginLeft{
