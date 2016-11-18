@@ -383,7 +383,6 @@ hr{
     width:2.5em;
     text-align:center;
 }
-
 .shoppingCar .tbottom{
     padding:15px 0;
     border-top:1px solid #ddd;
@@ -408,4 +407,27 @@ hr{
 }
 .shoppingCar .tbottom span.right a{
     color:#fff;
+}
+/*
+***************************************************推荐box*****************************************************
+*/
+.recommend nav ul li{
+    float:left;
+    font:#333 14px/18px arial, helvetica, verdana, sans-serif;
+    padding:5px 20px;
+    list-style:none;
+    border:1px solid #ddd;
+    background:#ddd;
+    border-bottom:none;
+}
+.recommend nav ul{
+    padding:0;
+    display:inline-block;
+    border:1px solid #333;
+}
+.recommend nav ul li:nth-of-type(1){
+    border-right:none;
+}
+.recommend .bookBox{
+    clear:both;
 }
