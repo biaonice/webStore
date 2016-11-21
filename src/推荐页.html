@@ -74,9 +74,8 @@
             <nav class="">
                 <span>推荐</span>
                 <ul>
-                    <li class="active"><a href="">推
-                        荐</a></li>
-                    <li><a href="">热搜</a></li>
+                    <li class="active"><a href="">推荐</a></li>
+                    <li><a href=""></a></li>
                 </ul>
             </nav>
             <div class="bookBox">
@@ -93,6 +92,59 @@
     <script src="../js/jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
+    <script>
+        function onLoad(f){
+            if (onLoad.loaded)
+                    window.setTimeout(f, 0);
+            else if (window.addEventListener)
+                    window.addEventListener("load",f,false);
+            else if (window.attachEvent)
+                    window.attachEvent("onload",f);
+        }
+        onLoad.loaded=false;
+        onLoad(function(){onload.loaded=true;});
+
+        function invoke(f,start,interval,end){
+            if (!start) start = 0;
+            if (arguments.length<=2) {
+                setTimeout(f, start);
+            }else{
+                setTimeout(repeat,start);
+                function repeat(){
+                    var h=setInterval(f, interval);
+                    if (end) setTimeout(function(){
+                        clearInterval(h);
+                    },end);
+                }
+            }
+        }
+
+        if (!XMLHttpRequest)location.replace("staticpage.html");
+
+
+        function getElements(){
+            var elements={};
+            for (var i=0;i<arguments.length;i++){
+                var id=arguments[i];
+                var elt=document.getElementById(id);
+                if (elt = =null)
+                        throw new Error("no element with id:"+id);
+                elements[id]=elt;
+            }
+            return elements;
+        }
+/**
+ *   parentNode
+ *   childNodes
+ *   fristChild
+ *   lastChild
+ *   nextSibling
+ *   previousSibling
+ *   nodeType
+ *   nodeValue
+ *   nodeName
+ */
+    </script>
 </div>
 </body>
 </html>
