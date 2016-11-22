@@ -29,38 +29,38 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../webStore.html">图书商城</a>
+                <a class="navbar-brand" href="../webStore.php">图书商城</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="../webStore.html">首页</a></li>
-                    <li><a href="register.html">注册</a></li>
+                    <li><a href="../webStore.php">首页</a></li>
+                    <li><a href="register.php">注册</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">全站导航 <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="book.detail.html">图书详情页</a></li>
-                            <li><a href="shopping.html">购物车</a></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="book.detail.php">图书详情页</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                             <li class="divider"></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                             <li class="divider"></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <!--登陆后改为用户名-->
-                    <li  class="active"><a href="login.html">登录</a></li>
-                    <li><a href="register.html">注册</a></li>
+                    <li  class="active"><a href="login.php">登录</a></li>
+                    <li><a href="register.php">注册</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">导航<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="shopping.html">购物车</a></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                             <li class="divider"></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -76,23 +76,22 @@
     </div>
 
 
-    <form action="post">
+    <form method="post" action="../php/loginManage.php">
         <div class="left loginLeft"></div>
         <div class="right loginRight">
             <div class="form-group">
-                <input type="text" placeholder="请输入用户名" id="uesrName" class="form-control">
+                <input type="text" placeholder="请输入用户名" id="userName" class="form-control" name="username">
             </div>
             <div class="form-group">
-                <input type="password" placeholder="请输入密码" id="password" class="form-control">
+                <input type="password" placeholder="请输入密码" id="password" class="form-control" name="password">
             </div>
             <div class="form-group">
                 <input type="checkbox" class="form-control">记住密码 <span class="right"><a href="">忘记密码?</a></span>
             </div>
             <div class="form-group">
-                <button type="button" class="btn btn-primary">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                <button type="submit" class="btn btn-primary" id="btn">登&nbsp;&nbsp;&nbsp;录</button>
             </div>
         </div>
-
     </form>
 
 
@@ -100,6 +99,20 @@
     <script src="../js/jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $('#btn').click(function(){
+                var userName=$("#userName").val();
+                var password=$("#password").val();
+                if(userName && password && userName!="" &&password!=""){
+                    alert("123");
+                }else{
+                    alert("用户名或密码有误！");
+                }
+            });
+        })
+    </script>
+
 </div>
 </body>
 </html>

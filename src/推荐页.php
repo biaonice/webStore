@@ -29,38 +29,38 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../webStore.html">图书商城</a>
+                <a class="navbar-brand" href="../webStore.php">图书商城</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="../webStore.html">首页</a></li>
-                    <li><a href="register.html">注册</a></li>
+                    <li><a href="../webStore.php">首页</a></li>
+                    <li><a href="register.php">注册</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">全站导航 <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="book.detail.html">图书详情页</a></li>
-                            <li><a href="shopping.html">购物车</a></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="book.detail.php">图书详情页</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                             <li class="divider"></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                             <li class="divider"></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <!--登陆后改为用户名-->
-                    <li  class="active"><a href="login.html">登录</a></li>
-                    <li><a href="register.html">注册</a></li>
+                    <li  class="active"><a href="login.php">登录</a></li>
+                    <li><a href="register.php">注册</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">导航<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="shopping.html">购物车</a></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                             <li class="divider"></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -119,7 +119,7 @@
             }
         }
 
-        if (!XMLHttpRequest)location.replace("staticpage.html");
+        if (!XMLHttpRequest)location.replace("staticpage.php");
 
 
         function getElements(){
@@ -144,6 +144,45 @@
  *   nodeValue
  *   nodeName
  */
+
+function classList(e){
+    if(e.classList) return e.classList;
+    else return new CSSClassList(e);
+}
+        CSSClassList.prototype.contains=function(e){
+            if (c.length===0 || c.indexOf(" ")!=-1)
+                    throw new Error("Invalid class name:'"+c+"'");
+            var classes=this.e.className;
+            if (!classes) return false;
+            if (classes===c)return true;
+            return classes.search("\\b"+c+"\\b")!=-1;
+        };
+        CSSClassList.prototype.add =function(c){
+            if (this.contains(c)) return;
+            var classes=this.e.className;
+            if (classes && classes[classes.length-1]!=" ")
+                    c = " "+c;
+            this.e.className+=c;
+        } ;
+        CSSClassList.prototype.remove=function(c){
+            if (c.length===0 || c.indexOf(" ")!=-1)
+                    throw new Error("Invalid class name:'"+c+"'");
+            var pattern =new RegExp("\\b"+c+"\\b\\s","g");
+            this.e.className=this.e.className.replace(pattern,"");
+        };
+        CSSClassList.prototype.toggle=function(c){
+            if (this.contains(c)){
+                this.remove(c);
+                return false;
+            }else{
+                this.add(c);
+                return true;
+            }
+        };
+        CSSClassList.prototype.toString=function(){return this.e.className;};
+        CSSClassList.prototype.toArray=function(){
+            return this.e.className.match(/\b\w+\b/g) ||[];
+        };
     </script>
 </div>
 </body>

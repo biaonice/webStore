@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,38 +28,38 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../webStore.html">图书商城</a>
+                <a class="navbar-brand" href="../webStore.php">图书商城</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li ><a href="../webStore.html">首页</a></li>
-                    <li class="active"><a href="register.html">注册</a></li>
+                    <li ><a href="../webStore.php">首页</a></li>
+                    <li class="active"><a href="register.php">注册</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">全站导航 <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="book.detail.html">图书详情页</a></li>
-                            <li><a href="shopping.html">购物车</a></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="book.detail.php">图书详情页</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                             <li class="divider"></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                             <li class="divider"></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                         </ul>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <!--登陆后改为用户名-->
-                    <li><a href="login.html">登录</a></li>
-                    <li><a href="register.html">注册</a></li>
+                    <li><a href="login.php">登录</a></li>
+                    <li><a href="register.php">注册</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">导航<span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="shopping.html">购物车</a></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                             <li class="divider"></li>
-                            <li><a href="shopping.html">购物车</a></li>
+                            <li><a href="shopping.php">购物车</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -79,7 +78,7 @@
     <div class="modal-title title">
         <span><img src="" alt=""></span>
         <span class="h3">注册账号</span>
-        <span class="right">已有账号<a href="login.html">登录</a></span>
+        <span class="right">已有账号<a href="login.php">登录</a></span>
     </div>
     <form action="post">
         <div class="form">
