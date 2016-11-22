@@ -84,7 +84,7 @@
   </div>
   <div class="main">
     <div class="navTitle container">
-        <h3><span>全部商品分类&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down"></i></span></h3>
+        <h3><span>全部商品分类<i class="glyphicon glyphicon-chevron-down"></i></span></h3>
         <ul>
             <li><a href="">尾品汇</a></li>
             <li><a href="">图书</a></li>

@@ -50,8 +50,8 @@
       <file leaf-file-name="trunk.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trunk.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+            <state relative-caret-position="442">
+              <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -60,8 +60,8 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1845">
-              <caret line="117" column="6" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
+            <state relative-caret-position="259">
+              <caret line="101" column="98" selection-start-line="101" selection-start-column="94" selection-end-line="101" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -70,18 +70,18 @@
       <file leaf-file-name="shopping.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shopping.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="154" column="6" selection-start-line="154" selection-start-column="2" selection-end-line="154" selection-end-column="6" />
+            <state relative-caret-position="1819">
+              <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="推荐页.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/推荐页.php">
+      <file leaf-file-name="123.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/123.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3093">
-              <caret line="188" column="6" selection-start-line="188" selection-start-column="2" selection-end-line="188" selection-end-column="6" />
+            <state relative-caret-position="520">
+              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -90,7 +90,7 @@
       <file leaf-file-name="book.detail.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/book.detail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="895">
+            <state relative-caret-position="1909">
               <caret line="146" column="7" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
               <folding />
             </state>
@@ -137,14 +137,15 @@
         <option value="$PROJECT_DIR$/css/webStore.css" />
         <option value="$PROJECT_DIR$/src/推荐页.html" />
         <option value="$PROJECT_DIR$/webStore.php" />
-        <option value="$PROJECT_DIR$/trunk.php" />
-        <option value="$PROJECT_DIR$/src/推荐页.php" />
         <option value="$PROJECT_DIR$/src/shopping.php" />
         <option value="$PROJECT_DIR$/src/register.php" />
         <option value="$PROJECT_DIR$/src/book.detail.php" />
         <option value="$PROJECT_DIR$/php/login.php" />
         <option value="$PROJECT_DIR$/src/login.php" />
         <option value="$PROJECT_DIR$/php/loginManage.php" />
+        <option value="$PROJECT_DIR$/src/推荐页.php" />
+        <option value="$PROJECT_DIR$/src/123.php" />
+        <option value="$PROJECT_DIR$/trunk.php" />
       </list>
     </option>
   </component>
@@ -322,18 +323,18 @@
       <workItem from="1479689404161" duration="11203000" />
       <workItem from="1479775719498" duration="752000" />
       <workItem from="1479779600846" duration="1090000" />
-      <workItem from="1479781476005" duration="12476000" />
+      <workItem from="1479781476005" duration="14745000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86372000" />
+    <option name="totallyTimeSpent" value="88641000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17416452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17416452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32567567" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -683,22 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webStore.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4342">
-          <caret line="230" column="7" selection-start-line="230" selection-start-column="7" selection-end-line="230" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/book.detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="895">
-          <caret line="146" column="7" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -711,34 +696,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/book.detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1909">
+          <caret line="146" column="7" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1845">
-          <caret line="117" column="6" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="6" />
+        <state relative-caret-position="259">
+          <caret line="101" column="98" selection-start-line="101" selection-start-column="94" selection-end-line="101" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shopping.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="154" column="6" selection-start-line="154" selection-start-column="2" selection-end-line="154" selection-end-column="6" />
+        <state relative-caret-position="1819">
+          <caret line="105" column="39" selection-start-line="105" selection-start-column="39" selection-end-line="105" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/推荐页.php">
+    <entry file="file://$PROJECT_DIR$/src/123.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3093">
-          <caret line="188" column="6" selection-start-line="188" selection-start-column="2" selection-end-line="188" selection-end-column="6" />
+        <state relative-caret-position="520">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webStore.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4342">
+          <caret line="230" column="7" selection-start-line="230" selection-start-column="7" selection-end-line="230" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trunk.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="107" column="41" selection-start-line="107" selection-start-column="41" selection-end-line="107" selection-end-column="41" />
+        <state relative-caret-position="442">
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
           <folding />
         </state>
       </provider>

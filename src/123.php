@@ -72,11 +72,6 @@
     <div class="container">
         <div class="recommend">
             <nav class="">
-                <span>推荐</span>
-                <ul>
-                    <li class="active"><a href="">推荐</a></li>
-                    <li><a href=""></a></li>
-                </ul>
             </nav>
             <div class="bookBox">
                 <div class="book">
@@ -93,96 +88,12 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
     <script>
-        function onLoad(f){
-            if (onLoad.loaded)
-                    window.setTimeout(f, 0);
-            else if (window.addEventListener)
-                    window.addEventListener("load",f,false);
-            else if (window.attachEvent)
-                    window.attachEvent("onload",f);
-        }
-        onLoad.loaded=false;
-        onLoad(function(){onload.loaded=true;});
+        $(function(){
+            var currentElement=$("[class=bookBox]");
+            currentElement.on('click','[class=book]',function(){
 
-        function invoke(f,start,interval,end){
-            if (!start) start = 0;
-            if (arguments.length<=2) {
-                setTimeout(f, start);
-            }else{
-                setTimeout(repeat,start);
-                function repeat(){
-                    var h=setInterval(f, interval);
-                    if (end) setTimeout(function(){
-                        clearInterval(h);
-                    },end);
-                }
-            }
-        }
-
-        if (!XMLHttpRequest)location.replace("staticpage.php");
-
-
-        function getElements(){
-            var elements={};
-            for (var i=0;i<arguments.length;i++){
-                var id=arguments[i];
-                var elt=document.getElementById(id);
-                if (elt = =null)
-                        throw new Error("no element with id:"+id);
-                elements[id]=elt;
-            }
-            return elements;
-        }
-/**
- *   parentNode
- *   childNodes
- *   fristChild
- *   lastChild
- *   nextSibling
- *   previousSibling
- *   nodeType
- *   nodeValue
- *   nodeName
- */
-
-function classList(e){
-    if(e.classList) return e.classList;
-    else return new CSSClassList(e);
-}
-        CSSClassList.prototype.contains=function(e){
-            if (c.length===0 || c.indexOf(" ")!=-1)
-                    throw new Error("Invalid class name:'"+c+"'");
-            var classes=this.e.className;
-            if (!classes) return false;
-            if (classes===c)return true;
-            return classes.search("\\b"+c+"\\b")!=-1;
-        };
-        CSSClassList.prototype.add =function(c){
-            if (this.contains(c)) return;
-            var classes=this.e.className;
-            if (classes && classes[classes.length-1]!=" ")
-                    c = " "+c;
-            this.e.className+=c;
-        } ;
-        CSSClassList.prototype.remove=function(c){
-            if (c.length===0 || c.indexOf(" ")!=-1)
-                    throw new Error("Invalid class name:'"+c+"'");
-            var pattern =new RegExp("\\b"+c+"\\b\\s","g");
-            this.e.className=this.e.className.replace(pattern,"");
-        };
-        CSSClassList.prototype.toggle=function(c){
-            if (this.contains(c)){
-                this.remove(c);
-                return false;
-            }else{
-                this.add(c);
-                return true;
-            }
-        };
-        CSSClassList.prototype.toString=function(){return this.e.className;};
-        CSSClassList.prototype.toArray=function(){
-            return this.e.className.match(/\b\w+\b/g) ||[];
-        };
+            })
+        })
     </script>
 </div>
 </body>
