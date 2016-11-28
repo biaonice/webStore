@@ -7,8 +7,8 @@
     <title>登录</title>
 
     <!-- Bootstrap -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/webStore.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/webStore.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,85 +16,90 @@
     <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <style>
+        #main {
+            background:#181818;
+            color:#111;
+            padding:15px 20px;
+            width:600px;
+            border:1px solid #222;
+            margin:8px auto;
+        }
+    </style>
 </head>
 <body>
 <div id="login">
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../webStore.php">图书商城</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="../webStore.php">首页</a></li>
-                    <li><a href="register.php">注册</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">全站导航 <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="book.detail.php">图书详情页</a></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li class="divider"></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li class="divider"></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <!--登陆后改为用户名-->
-                    <li  class="active"><a href="login.php">登录</a></li>
-                    <li><a href="register.php">注册</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">导航<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li class="divider"></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-
-
-    <div class="container">
-        <div class="recommend">
-            <nav class="">
-            </nav>
-            <div class="bookBox">
-                <div class="book">
-                    <a href=""><img src="../image/24047503-2_w_5.jpg" alt=""></a>
-                    <a href=""><span>百度,全球最大的中文搜索引擎、最大的中文网站</span></a>
-                    <span><mark>￥25</mark><s>￥36</s></span>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../js/bootstrap.min.js"></script>
-    <script>
-        $(function(){
-            var currentElement=$("[class=bookBox]");
-            currentElement.on('click','[class=book]',function(){
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.tmpl.js"></script>
 
-            })
-        })
-    </script>
+    <ul class="idTabs">
+        <li><a href="#male">Male Finishers</a></li>
+        <li><a href="#female">Female Finishers</a></li>
+        <li><a href="#all">All Finishers</a></li>
+        <li><a href="#new">Add New Finisher</a></li>
+    </ul>
+    <div id="male">
+        <h4>Male Finishers</h4><ul id="finishers_m"></ul>
+    </div>
+    <div id="female">
+        <h4>Female Finishers</h4><ul id="finishers_f"></ul>
+    </div>
+    <div id="all">
+        <h4>All Finishers</h4> <ul id="finishers_all"></ul>
+    </div>
+    <div id="new">
+        <h4>Add New Finisher</h4>
+        <form id="addRunner" name="addRunner" action="service.php" method="POST">
+            First Name: <input type="text" name="txtFirstName" id="txtFirstName" /> <br>
+            Last Name: <input type="text" name="txtLastName" id="txtLastName" /> <br>
+            Gender: <select id="ddlGender" name="ddlGender">
+                <option value="">--Please Select--</option>
+                <option value="f">Female</option>
+                <option value="m">Male</option>
+            </select><br>
+            Finish Time:
+            <input type="text" name="txtMinutes" id="txtMinutes" size="10" maxlength="2" />(Minutes)
+            <input type="text" name="txtSeconds" id="txtSeconds" size="10" maxlength="2" />(Seconds)
+            <br><br>
+            <button type="submit" name="btnSave" id="btnSave">Add Runner</button>
+            <input type="hidden" name="action" value="addRunner" id="action">
+        </form>
+    </div>
+
+
+
+<!---->
+<!--    <script>-->
+<!--        $(function(){-->
+<!--            var currentElement=$("[class=bookBox]");-->
+<!--            function main(){-->
+<!--                var param={-->
+<!--                    'id':currentElement.find('[data=id]').val()||'',//is-->
+<!--                    'name':currentElement.find('[data=name]').val()||'',//姓名-->
+<!--                };-->
+<!--                $.ajax({-->
+<!--                    url:"php/loginManage.php",-->
+<!--                    data:param,-->
+<!--                    type:'post',-->
+<!--                    async:false,-->
+<!--                    dataType:"json",-->
+<!--                    success:function(result){-->
+<!--                        console.log(result);-->
+<!--                    },-->
+<!--                    error:function(){-->
+<!--                        console.log("123");-->
+<!--                    }-->
+<!---->
+<!--            });-->
+<!--            }-->
+<!--        })-->
+<!--    </script>-->
+
 </div>
 </body>
 </html>

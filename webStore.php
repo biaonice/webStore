@@ -20,7 +20,6 @@
     <link rel="SHORTCUT ICON" href="image/123.gif">
 </head>
 <body>
-
 <?php
     include "src/navbar.inc.php";
     include "src/header.inc.php";
@@ -32,5 +31,10 @@
 <script src="js/jquery-3.1.1.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.tmpl.js"></script>
+
+
+
+
 </body>
 </html>
