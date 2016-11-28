@@ -18,95 +18,12 @@
 </head>
 <body>
 <div id="register">
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../webStore.php">图书商城</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li ><a href="../webStore.php">首页</a></li>
-                    <li class="active"><a href="register.php">注册</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">全站导航 <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="book.detail.php">图书详情页</a></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li class="divider"></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li class="divider"></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <!--登陆后改为用户名-->
-                    <li><a href="login.php">登录</a></li>
-                    <li><a href="register.php">注册</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">导航<span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                            <li class="divider"></li>
-                            <li><a href="shopping.php">购物车</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+    <?php
+        include "login.register.header.inc.php";
+        include "register.inc.php";
+    ?>
 
-
-    <div class="storeHeader container">
-        <div class="logo"><img src="../image/123.png" alt="" width=""></div>
-    </div>
-    <div class="main">
-        <hr />
-    </div>
-
-    <div class="modal-title title">
-        <span><img src="" alt=""></span>
-        <span class="h3">注册账号</span>
-        <span class="right">已有账号<a href="login.php">登录</a></span>
-    </div>
-    <form action="post">
-        <div class="form">
-            <div class="input-group">
-                <span class="input-group-addon">用户名</span>
-                <input type="text" placeholder="用户名" id="uesrName" class="form-control">
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon">邮箱</span>
-                <input type="text" placeholder="邮箱" id="uesrName" class="form-control">
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon">密码</span>
-                <input type="password" placeholder="请输入密码" id="password" class="form-control">
-            </div>
-            <div class="input-group">
-                <span class="input-group-addon">确认密码</span>
-                <input type="password" placeholder="请确认密码" id="password" class="form-control">
-            </div>
-            <div class="input-group">
-                <input type="checkbox" class="form-control">阅读并接受用户协议 <span><a href="">&laquo;用户协议&raquo;</a></span>
-            </div>
-            <div class="input-group">
-                <button type="button" class="btn btn-primary">注&nbsp;&nbsp;&nbsp;册</button>
-            </div>
-        </div>
-
-    </form>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

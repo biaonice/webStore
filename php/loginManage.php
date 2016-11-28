@@ -11,8 +11,6 @@ $name=$_post["username"];
 $possword=$_post["possword"];
 $result=mysql_query("select id,name from admin");
 while($row=mysql_fetch_object($result)){
-    echo "ID: ".$row->id."    text: ".$row->name."
-\n";
+    echo "".$row->id."     ".$row->name."\n";
 }
-
 ?>
