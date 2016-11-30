@@ -9,8 +9,8 @@
     <span class="h3">注册账号</span>
     <span class="right">已有账号<a href="login.php">登录</a></span>
 </div>
-<form action="post">
-    <div class="form">
+<form action="post" action="../php/loginManage.php">
+    <div class="form" >
         <div class="input-group">
             <span class="input-group-addon">用户名</span>
             <input type="text" placeholder="用户名" id="uesrName" class="form-control">

@@ -18,14 +18,7 @@
     <![endif]-->
 
     <style>
-        #main {
-            background:#181818;
-            color:#111;
-            padding:15px 20px;
-            width:600px;
-            border:1px solid #222;
-            margin:8px auto;
-        }
+
     </style>
 </head>
 <body>
@@ -37,68 +30,33 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.tmpl.js"></script>
 
-    <ul class="idTabs">
-        <li><a href="#male">Male Finishers</a></li>
-        <li><a href="#female">Female Finishers</a></li>
-        <li><a href="#all">All Finishers</a></li>
-        <li><a href="#new">Add New Finisher</a></li>
-    </ul>
-    <div id="male">
-        <h4>Male Finishers</h4><ul id="finishers_m"></ul>
-    </div>
-    <div id="female">
-        <h4>Female Finishers</h4><ul id="finishers_f"></ul>
-    </div>
-    <div id="all">
-        <h4>All Finishers</h4> <ul id="finishers_all"></ul>
-    </div>
-    <div id="new">
-        <h4>Add New Finisher</h4>
-        <form id="addRunner" name="addRunner" action="service.php" method="POST">
-            First Name: <input type="text" name="txtFirstName" id="txtFirstName" /> <br>
-            Last Name: <input type="text" name="txtLastName" id="txtLastName" /> <br>
-            Gender: <select id="ddlGender" name="ddlGender">
-                <option value="">--Please Select--</option>
-                <option value="f">Female</option>
-                <option value="m">Male</option>
-            </select><br>
-            Finish Time:
-            <input type="text" name="txtMinutes" id="txtMinutes" size="10" maxlength="2" />(Minutes)
-            <input type="text" name="txtSeconds" id="txtSeconds" size="10" maxlength="2" />(Seconds)
-            <br><br>
-            <button type="submit" name="btnSave" id="btnSave">Add Runner</button>
-            <input type="hidden" name="action" value="addRunner" id="action">
-        </form>
-    </div>
 
 
+    <div>
 
-<!---->
-<!--    <script>-->
-<!--        $(function(){-->
-<!--            var currentElement=$("[class=bookBox]");-->
-<!--            function main(){-->
-<!--                var param={-->
-<!--                    'id':currentElement.find('[data=id]').val()||'',//is-->
-<!--                    'name':currentElement.find('[data=name]').val()||'',//姓名-->
-<!--                };-->
-<!--                $.ajax({-->
-<!--                    url:"php/loginManage.php",-->
-<!--                    data:param,-->
-<!--                    type:'post',-->
-<!--                    async:false,-->
-<!--                    dataType:"json",-->
-<!--                    success:function(result){-->
-<!--                        console.log(result);-->
-<!--                    },-->
-<!--                    error:function(){-->
-<!--                        console.log("123");-->
-<!--                    }-->
-<!---->
-<!--            });-->
-<!--            }-->
-<!--        })-->
-<!--    </script>-->
+        <div id="test1" refresh="test"><span id="test"></span></div>
+    </div>
+
+    <script>
+        $(function(){
+            function main(){
+                $.ajax({
+                    url:"php/loginManage.php",
+                    type:'POST',
+                    dataType:"json",
+                    success:function(result){
+                        console.log(result);
+                        $('#test').html(result[1].id);
+                    },
+                    error:function(){
+                        console.log("error");
+                    }
+                });
+            }
+            main();
+
+        })
+    </script>
 
 </div>
 </body>

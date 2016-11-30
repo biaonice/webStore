@@ -19,29 +19,17 @@
 </head>
 <body>
 <div id="login">
-    <?php
-        include "login.register.header.inc.php";
-        include "login.inc.php";
-    ?>
+
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../js/jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
-    <script>
-        $(function(){
-            $('#btn').click(function(){
-                var userName=$("#userName").val();
-                var password=$("#password").val();
-                if(userName && password && userName!="" &&password!=""){
-                    alert("123");
-                }else{
-                    alert("用户名或密码有误！");
-                }
-            });
-        })
-    </script>
+    <?php
+    include "login.register.header.inc.php";
+    include "login.inc.php";
+    ?>
 
 </div>
 </body>
