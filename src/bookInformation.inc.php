@@ -45,58 +45,27 @@
 </div>
 <script>
     $(function(){
-//        var data=[
-//            {
-//                price:"1234",
-//                commit:"5320",
-//                adress:"安徽合肥"
-//            },{
-//                price:"1564",
-//                commit:"5332",
-//                adress:"安徽蚌埠"
-//            },{
-//                price:"1294",
-//                commit:"3532",
-//                adress:"安徽阜阳"
-//            },{
-//                price:"1834",
-//                commit:"5332",
-//                adress:"安徽合肥"
-//            },{
-//                price:"1334",
-//                commit:"1532",
-//                adress:"安徽合肥"
-//            }
-//        ];
-//        console.log(data);
-////        $("#main1").tmpl(data).appendTo('#main');
-//        $("#main").tmpl(data).appendTo('#Box');
+        var data=[];
+        function main(){
+                $.ajax({
+                    url:"../php/bookInformation.manage.php",
+                    type:'POST',
+                    dataType:"json",
+                    success:function(result){
+                        console.log(result);
+                        data = result;
+                        $("#main").tmpl(data).appendTo('#Box');
+                    },
+                    error:function(){
+                        console.log("error");
+                    }
+                });
+            }
+            main();
 
+            $("#shoppingcar").click(function(){
 
-
-
-
-    var data=[];
-    function main(){
-            $.ajax({
-                url:"../php/loginManage.php",
-                type:'POST',
-                dataType:"json",
-                success:function(result){
-                    console.log(result);
-                    data = result;
-                    $("#main").tmpl(data).appendTo('#Box');
-                },
-                error:function(){
-                    console.log("error");
-                }
-            });
-        }
-        main();
-
-        $("#shoppingcar").click(function(){
-
-        })
-    })
+            })
+    });
 
 </script>

@@ -33,7 +33,6 @@
 
 
     <div>
-
         <div id="test1" refresh="test"><span id="test"></span></div>
     </div>
 
@@ -54,6 +53,41 @@
                 });
             }
             main();
+
+
+
+
+
+
+
+            //        var data=[
+//            {
+//                price:"1234",
+//                commit:"5320",
+//                adress:"安徽合肥"
+//            },{
+//                price:"1564",
+//                commit:"5332",
+//                adress:"安徽蚌埠"
+//            },{
+//                price:"1294",
+//                commit:"3532",
+//                adress:"安徽阜阳"
+//            },{
+//                price:"1834",
+//                commit:"5332",
+//                adress:"安徽合肥"
+//            },{
+//                price:"1334",
+//                commit:"1532",
+//                adress:"安徽合肥"
+//            }
+//        ];
+//        console.log(data);
+////        $("#main1").tmpl(data).appendTo('#main');
+//        $("#main").tmpl(data).appendTo('#Box');
+
+
 
         })
     </script>

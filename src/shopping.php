@@ -33,7 +33,7 @@
     <script src="../js/jquery.tmpl.js"></script>
 
     <?php
-    include "navbar.inc.php";
+    include "login.register.header.inc.php";
     include "shoppingCar.inc.php";
     ?>
 

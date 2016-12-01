@@ -21,90 +21,57 @@
         </div>
     </div>
 </form>
-<?php
-$name=$_post['username'];
-$pwd=$_post['possword'];
-$con=mysql_connect("localhost","root","124079");
-mysql_select_db("webstore",$con);
-$result=mysql_query("select * from admin WHERE name=$name AND password=$pwd");
-    if(result&&result!=""){
-
-    }else{
-        echo "登陆失败";
-    }
 
 
 
-/*$result=mysql_query("select id,name,password from admin");
-while($row=mysql_fetch_array($result)){
-    $data[]=array(
-        'id'=>"$row[id]",
-        'name'=>"$row[name]",
-    );
-};
-echo json_encode($data);
-mysql_close($con);*/
-?>
 
-<!--<script>-->
-<!--    $(function(){-->
-<!--        var mainList = [];-->
-<!--        function main(){-->
-<!--            var param = {-->
-<!--                'username': $('#uesrName').val() || "",-->
-<!--                'password': $('#password').val() || ""-->
-<!--            };-->
-<!--            $.ajax({-->
-<!--                data: param,-->
-<!--                url: "../php/loginManage.php",-->
-<!--                type: 'POST',-->
-<!--                contentType: 'application/json',-->
-<!--                success: function (result) {-->
-<!--                    mainList = $.parseJSON(result);-->
-<!--                    console.log(param);-->
-<!--                    aa(result);-->
-<!--                }-->
-<!--            });-->
-<!--        }-->
-<!---->
-<!--        main();-->
-<!--        console.log(mainList);-->
-<!--        function login(result) {-->
-<!--            var param = {-->
-<!--                'username': $('#uesrName').val() || "",-->
-<!--                'password': $('#password').val() || ""-->
-<!--            }-->
-<!--            if (param.username == "" && param.password == "") {-->
-<!--                alert("用户名或密码为空");-->
-<!--            }-->
-<!---->
-<!--        }-->
-<!---->
-<!--        login();-->
-<!--        $('#btn').click(login);-->
-<!--        function aa(result){-->
-<!--            mainList=$.parseJSON(result);-->
-<!--            console.log(mainList);-->
-<!--        }-->
-<!--    });-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--//            for(var i=0;i<mainList.length;i++){-->
-<!--//               if(param.username==mainList[i].name && param.password==mainList[i].pwd){-->
-<!--//                   alert("登录成功");-->
-<!--//               }else{-->
-<!--//                   alert("登录失败请联系管理员");-->
-<!--//               }-->
-<!--//           }-->
-<!-- -->
-<!--</script>-->
+<script>
+    $(function(){
+        function main(){
+            var param = {
+                'username': $('#uesrName').val() || "",
+                'password': $('#password').val() || ""
+            };
+            $.ajax({
+                data: param,
+                url: "../php/loginManage.php",
+                type: 'POST',
+                dataType: 'JSON',
+                success: function (result) {
+                    console.log(result);
+                }
+            });
+        }
+        main();
+        function login(result) {
+            var param = {
+                'username': $('#uesrName').val() || "",
+                'password': $('#password').val() || ""
+            }
+            if (param.username == "" && param.password == "") {
+                alert("用户名或密码为空");
+            }
+        }
+        login();
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+//            for(var i=0;i<mainList.length;i++){
+    //               if(param.username==mainList[i].name && param.password==mainList[i].pwd){
+    //                   alert("登录成功");
+    //               }else{
+    //                   alert("登录失败请联系管理员");
+    //               }
+    //           }
+
+</script>

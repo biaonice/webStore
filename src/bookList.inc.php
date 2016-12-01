@@ -23,7 +23,7 @@
         var data=[];
         function main(){
             $.ajax({
-                url:"php/loginManage.php",
+                url:"php/bookInformation.manage.php",
                 type:'POST',
                 dataType:"json",
                 success:function(result){

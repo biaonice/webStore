@@ -232,7 +232,7 @@ hr{
     height:1em;
     margin-right:.3em;
 }
-#register .form .input-group button{
+#register .form .input-group input[type=submit]{
     width:23em;
     height:2.5em;
 }
@@ -434,4 +434,35 @@ hr{
 }
 .recommend .bookBox{
     clear:both;
+}
+
+/*
+***************************************************用户管理*****************************************************
+*/
+.userManage{}
+.userManage div{
+    margin-left:20px;
+    margin-top:10px;
+}
+.userManage div span{
+    display:inline-block;
+    width:60px;
+    text-align:center;
+}
+.userManage div input[type=text]{
+    width:220px;
+    display:inline-block;
+}
+.userManage div input[type=radio]{
+    width:1em;
+    height:1em;
+    display:inline-block;
+}
+.userManage div button{
+    margin-left:200px;
+    width:220px;
+    display:inline-block;
+}
+.userManage div span.align{
+    vertical-align:top;
 }
