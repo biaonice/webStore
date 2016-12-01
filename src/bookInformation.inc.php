@@ -20,10 +20,10 @@
                 </nav>
             </div>
             <div class="information">
-                <p class="h4">京东JD.COM-专业的综合网上购物商城，销售超数万品牌、4020万种商品</p>
-                <p><a href="">促销中</a></p>
-                <p class="price"><span>价格：<span id="price">${price}</span></span><span class="right">累计评价：<span><a href="" id="commit">${commit}</a></span></span></p>
-                <p>配送至： <span id="adress">${adress}</span></p>
+                <p class="h4">${comment}</p>
+                <p><a href="">${discount}</a></p>
+                <p class="price"><span>价格：<span>${price}元</span></span><span class="right">累计评价：<span><a href="">${commit}+</a></span></span></p>
+                <p>配送至： <span>${adress}</span></p>
                 <p class="service">服务：由京东发货，并提供售后服务。</p>
                 <p class="input-group counter">
                     <input type="text" value="1" class="form-control">
@@ -31,7 +31,7 @@
                 </p>
                 <p class="right">
                     <span class="btn btn-primary">
-                        <a href="">加入购物车</a>
+                        <a href="" id="shoppingcar">加入购物车</a>
                     </span>
                     <span class="btn btn-danger">
                         <a href="">到货通知</a>
@@ -93,6 +93,10 @@
             });
         }
         main();
+
+        $("#shoppingcar").click(function(){
+
+        })
     })
 
 </script>

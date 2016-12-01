@@ -20,6 +20,13 @@
     <link rel="SHORTCUT ICON" href="image/123.gif">
 </head>
 <body>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery-3.1.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.tmpl.js"></script>
+
 <?php
     include "src/navbar.inc.php";
     include "src/header.inc.php";
@@ -27,11 +34,7 @@
     include "src/leftNav.inc.php";
     include "src/bookList.inc.php";
 ?>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.tmpl.js"></script>
+
 
 
 
