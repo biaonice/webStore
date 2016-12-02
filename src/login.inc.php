@@ -4,11 +4,11 @@
  * Date: 2016/11/28
  * Time: 9:18
  *-->
-<form method="post">
+<form method="POST">
     <div class="left loginLeft"></div>
     <div class="right loginRight">
         <div class="form-group">
-            <input type="text" placeholder="请输入用户名" id="userName" class="form-control" name="username">
+            <input type="text" placeholder="请输入用户名" id="userName" class="form-control" name="userName">
         </div>
         <div class="form-group">
             <input type="password" placeholder="请输入密码" id="password" class="form-control" name="password">
@@ -17,7 +17,7 @@
             <input type="checkbox" class="form-control">记住密码<span class="right"><a href="">忘记密码?</a></span>
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-primary" id="btn">登&nbsp;&nbsp;&nbsp;录</button>
+            <button class="btn btn-primary" id="btn">登&nbsp;&nbsp;&nbsp;录</button>
         </div>
     </div>
 </form>
@@ -29,13 +29,13 @@
     $(function(){
         function main(){
             var param = {
-                'username': $('#uesrName').val() || "",
-                'password': $('#password').val() || ""
+                'userName':$("#userName").val()||"",
+                'password':$("#password").val()||""
             };
             $.ajax({
-                data: param,
-                url: "../php/loginManage.php",
+                url: "../php/login.manage.php",
                 type: 'POST',
+                data: param,
                 dataType: 'JSON',
                 success: function (result) {
                     console.log(result);
@@ -43,16 +43,9 @@
             });
         }
         main();
-        function login(result) {
-            var param = {
-                'username': $('#uesrName').val() || "",
-                'password': $('#password').val() || ""
-            }
-            if (param.username == "" && param.password == "") {
-                alert("用户名或密码为空");
-            }
-        }
-        login();
+        $('#btn').click(function(){
+            main();
+        });
     });
 
 

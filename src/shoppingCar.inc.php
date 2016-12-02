@@ -42,7 +42,6 @@
                 <span class="btn btn-danger"><a href="">结&nbsp;&nbsp;算</a></span>
             </div>
         </div>
-
     </div>
 </div>
 
@@ -51,7 +50,7 @@
     $(function(){
         function main(){
             $.ajax({
-                url:"../php/loginManage.php",
+                url:"../php/login.manage.php",
                 type:'POST',
                 dataType:"json",
                 success:function(result){

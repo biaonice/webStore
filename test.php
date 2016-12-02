@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>登录</title>
+    <title>test</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -22,7 +22,7 @@
     </style>
 </head>
 <body>
-<div id="login">
+<div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.1.1.min.js"></script>
@@ -31,67 +31,22 @@
     <script src="js/jquery.tmpl.js"></script>
 
 
+    <!-- Small modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm" id="myModal">Small modal</button>
 
-    <div>
-        <div id="test1" refresh="test"><span id="test"></span></div>
+    <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                ...
+            </div>
+        </div>
     </div>
-
-    <script>
-        $(function(){
-            function main(){
-                $.ajax({
-                    url:"php/loginManage.php",
-                    type:'POST',
-                    dataType:"json",
-                    success:function(result){
-                        console.log(result);
-                        $('#test').html(result[1].id);
-                    },
-                    error:function(){
-                        console.log("error");
-                    }
-                });
-            }
-            main();
-
-
-
-
-
-
-
-            //        var data=[
-//            {
-//                price:"1234",
-//                commit:"5320",
-//                adress:"安徽合肥"
-//            },{
-//                price:"1564",
-//                commit:"5332",
-//                adress:"安徽蚌埠"
-//            },{
-//                price:"1294",
-//                commit:"3532",
-//                adress:"安徽阜阳"
-//            },{
-//                price:"1834",
-//                commit:"5332",
-//                adress:"安徽合肥"
-//            },{
-//                price:"1334",
-//                commit:"1532",
-//                adress:"安徽合肥"
-//            }
-//        ];
-//        console.log(data);
-////        $("#main1").tmpl(data).appendTo('#main');
-//        $("#main").tmpl(data).appendTo('#Box');
-
-
-
-        })
-    </script>
-
 </div>
+
+<script>
+    $(function(){
+        $('#myModal').modal(options);
+    })
+</script>
 </body>
 </html>

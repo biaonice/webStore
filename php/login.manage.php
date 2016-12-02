@@ -7,18 +7,21 @@
  */
 $con=mysql_connect("localhost","root","124079");
 mysql_select_db("webstore",$con);
-$result=mysql_query("select * from user");
 $data=array();
+$name=$_POST['userName'];
+$password=$_POST['password'];
+//$sql="select * from user where $name='username' AND $password='password'";
+$sql_user="select * FROM user";
+//$con=mysql_query($sql_user);
+$result=mysql_query($sql_user);
 while($row=mysql_fetch_array($result)){
     $data[]=array(
-        'id'=>"$row[id]",
         'name'=>"$row[username]",
         'password'=>"$row[password]",
-        'email'=>"$row[email]",
-        'phone'=>"$row[phone]",
-        'adress'=>"$row[adress]"
     );
 };
 echo json_encode($data);
-mysql_close($con);
+
+
+
 ?>

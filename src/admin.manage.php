@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>购物车</title>
+    <title>后台管理系统</title>
 
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -18,14 +18,7 @@
     <![endif]-->
 </head>
 <body>
-<div id="shopping">
-    <div class="main">
-        <div class="navTitle container">
-            <h3><span>购物车&nbsp;&nbsp;&nbsp;</span></h3>
-        </div>
-        <hr />
-    </div>
-
+<div id="manage">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../js/jquery-3.1.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -33,14 +26,9 @@
     <script src="../js/jquery.tmpl.js"></script>
 
     <?php
-        include "login.register.header.inc.php";
-        include "shoppingCar.inc.php";
+        include "admin.navbar.inc.php";
+        include "admin.manage.inc.php";
     ?>
-
-
-
-
-
 
 </div>
 </body>

@@ -9,11 +9,11 @@
     <span class="h3">注册账号</span>
     <span class="right">已有账号<a href="login.php">登录</a></span>
 </div>
-<form method="POST" action="../php/register.manage.php">
+<form method="POST">
     <div class="form" >
         <div class="input-group">
             <span class="input-group-addon">用户名</span>
-            <input type="text" placeholder="用户名" id="uesrName" name="userName" class="form-control">
+            <input type="text" placeholder="用户名" id="userName"  class="form-control">
         </div>
         <div class="input-group">
             <span class="input-group-addon">邮箱</span>
@@ -31,7 +31,7 @@
             <input type="checkbox" class="form-control">阅读并接受用户协议 <span><a href="">&laquo;用户协议&raquo;</a></span>
         </div>
         <div class="input-group">
-            <input type="button" class="btn btn-primary" id="btn" value="注&nbsp;&nbsp;&nbsp;&nbsp;册">
+            <input type="submit" class="btn btn-primary" id="btn" value="注&nbsp;&nbsp;&nbsp;&nbsp;册">
         </div>
     </div>
 </form>
@@ -40,7 +40,7 @@
     $(function(){
         function main(){
             var param={
-                'username':$("#userName").val()||'',
+                'userName':$("#userName").val()||'',
                 'password':$("#password").val()||'',
                 'email':$("#email").val()||''
             }
@@ -57,8 +57,6 @@
                 }
             });
         }
-
-
         $('#btn').click(function(){
             main();
         });
