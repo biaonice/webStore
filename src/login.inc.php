@@ -47,24 +47,4 @@
             main();
         });
     });
-
-
-
-
-
-
-
-
-
-
-
-
-//            for(var i=0;i<mainList.length;i++){
-    //               if(param.username==mainList[i].name && param.password==mainList[i].pwd){
-    //                   alert("登录成功");
-    //               }else{
-    //                   alert("登录失败请联系管理员");
-    //               }
-    //           }
-
 </script>

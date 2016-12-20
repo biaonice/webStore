@@ -43,14 +43,14 @@
                 'userName':$("#userName").val()||'',
                 'password':$("#password").val()||'',
                 'email':$("#email").val()||''
-            }
+            };
             $.ajax({
                 url:"../php/register.manage.php",
                 type:'POST',
                 data:param,
                 dataType:"JSON",
-                success:function(result){
-                    console.log(result);
+                success:function(){
+                    alert("注册成功");
                 },
                 error:function(){
                     console.log("error");

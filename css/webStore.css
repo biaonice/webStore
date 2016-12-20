@@ -516,6 +516,9 @@ hr{
 #manage>div>div>div.list:nth-of-type(2n){
     background:#ccc;
 }
+.active1{
+    background:#333;
+}
 #manage>div>div>div>div>span{
     display:inline-block;
     border-right:1px solid #aaa;

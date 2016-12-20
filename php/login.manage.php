@@ -10,16 +10,20 @@ mysql_select_db("webstore",$con);
 $data=array();
 $name=$_POST['userName'];
 $password=$_POST['password'];
-//$sql="select * from user where $name='username' AND $password='password'";
-$sql_user="select * FROM user";
+$sql="select * from user where $name='username' AND $password='password'";
+//$sql_user="select * FROM user";
 //$con=mysql_query($sql_user);
-$result=mysql_query($sql_user);
-while($row=mysql_fetch_array($result)){
-    $data[]=array(
-        'name'=>"$row[username]",
-        'password'=>"$row[password]",
-    );
-};
+$result=mysql_query($sql);
+if($result){
+    while($row=mysql_fetch_array($result)){
+        $data[]=array(
+            'name'=>"$row[username]",
+            'password'=>"$row[password]",
+        );
+    };
+}
+
+
 echo json_encode($data);
 
 
